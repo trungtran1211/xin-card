@@ -22,6 +22,13 @@
             
         </div>
     </div>
-
+    <script>
+        var popup = document.querySelector('.box-popup');
+        var bgPopup = document.querySelector('.bg-popup');
+        popup.style.top = '-100%';
+        setTimeout(() => {
+            popup.style.top = '50%';
+        }, 500);
+    </script>
 </body>
 </html>
