@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Montserrat', sans-serif;
+    background: url(../images/banner.jpg) no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    min-height: 100vh;
+}
+a {
+    text-decoration: none;
+}
+img {
+    max-width: 100%;
+}
+
+.bg-popup{
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background: #0073a5c9;
+    transition: all 0.5s ease;
+}
+
+.box-popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    max-width: 520px;
+    background: url(../images/bg-pp.png) no-repeat center center;
+    background-size: 100%;
+    border-radius: 15px;
+    transition: all 1s ease;
+    text-align: center;
+}
+.box-btn{
+    margin-bottom: 12px;
+}
+.logo img {
+    margin: 20px 0 55px;
+}
+.service img {
+    margin-bottom: 26px;
+}
+h1 {
+    font-style: italic;
+    font-weight: 900;
+    font-size: 35px;
+    line-height: 43px;
+    text-align: center;
+
+    color: #343434;
+    margin-bottom: 71px;
+}
+
+
+.close{
+    background: transparent;
+    border: none;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -55px;
+    cursor: pointer;
+}
+
+.mb{
+    display: none;
+}
+
+@media screen and (max-width: 600px){
+    body {
+        background: url(../images/bg-mb.png) no-repeat center center;
+    }
+    .box-popup{
+        background: url(../images/mb-pp.png) no-repeat center center;
+        max-width: 360.16px;
+        height: 315px;
+    }
+
+    .logo img {
+        margin: 22px 0 9px;
+    }
+    h1 {
+        font-size: 23px;
+        line-height: 32px;
+        margin-bottom: 50px;
+    }
+    .btn img {
+        max-width: 257px;
+    }
+    .mb{
+        display: block;
+    }
+
+    .pc{
+        display: none;
+    }
+    .box-btn{
+        display: flex;
+        justify-content: center;
+        margin-bottom: 4px;
+    }
+    .service img {
+        max-width: 164px;
+    }
+    .close  {
+        bottom: -35px;
+    }
+    .close img {
+        max-width: 20px;
+    }
+}
+
+
+
